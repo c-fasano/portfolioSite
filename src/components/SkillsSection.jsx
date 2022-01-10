@@ -1,61 +1,129 @@
 import React from "react";
 import styled from "styled-components";
 
-import CSS from "../images/CSS.png";
-import HTML from "../images/HTML.png";
-import JS from "../images/JS.png";
-import Node from "../images/Node.png";
-import Python from "../images/Python.png";
-import ReactImg from "../images/React.png";
-import Redux from "../images/Redux.png"
-import SASS from "../images/SASS.png";
-import Stack from "../images/Stack.jpg"
+import CSS from "../images/css-3.svg";
+import Django from "../images/django.svg";
+import Express from "../images/express-109.svg"
+import HTML from "../images/html-1.svg";
+import JQuery from "../images/jquery-4.svg";
+import JS from "../images/logo-javascript.svg";
+import Mongo from "../images/mongodb-icon-1.svg";
+import Node from "../images/nodejs-icon.svg";
+import Python from "../images/python-5.svg";
+import ReactImg from "../images/react-2.svg";
+import Redux from "../images/redux.svg"
+import SASS from "../images/sass-1.svg";
+import Stack from "../images/Stack.jpg";
+
+import { StyledAbout, StyledDescription, StyledImage, Hide } from "../styles";
 
 const SkillsSection = () => {
   return (
-    <div className="skills">
-      <div className="description">
+    <StyledServices>
+      <StyledDescription>
         <h2>Full <span>Stack</span>Developer</h2>
-        <div className="cards">
-          <div className="card">
+        <StyledCards>
+          <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-              <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-              <Logo className="Logo" src={SASS} alt="SASS Logo"/>
-              <h3>Layout & Design</h3>
+              <Logo className="Logo" src={HTML} alt="HTML Logo"/>         
             </div>
-          </div>
-          <div className="card">
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={CSS} alt="CSS Logo"/>         
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={SASS} alt="SASS Logo"/>         
+            </div>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
               <Logo className="Logo" src={JS} alt="JS Logo"/>
-              <Logo className="Logo" src={Python} alt="Python Logo"/>
-              <h3>OOP</h3>
             </div>
-          </div>
-          <div className="card">
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Python} alt="Python Logo"/>         
+            </div>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
               <Logo className="Logo" src={Node} alt="Node.js Logo"/>
-              <h3>Backend</h3>
             </div>
-          </div>
-          <div className="card">
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={ReactImg} alt="React Logo"/>
-              <Logo className="Logo" src={Redux} alt="Redux Logo"/>
-              <h3>Libraries</h3>
+              <Logo className="Logo" src={ReactImg} alt="React Logo"/>         
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="image">
-
-      </div>
-    </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Redux} alt="Redux Logo"/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Express} alt="Redux Logo" style={{background: "white", marginTop: "30%"}}/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Mongo} alt="Redux Logo"/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Django} alt="Redux Logo"/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={JQuery} alt="Redux Logo"/>
+            </div>
+          </StyledCard>
+        </StyledCards>
+      </StyledDescription>
+      <StyledImage>
+        <img src={Stack} alt="rocks stacked" style={{ width: "85%" }}/>
+      </StyledImage>
+    </StyledServices>
   )
 }
 
 const Logo = styled.img`
-  width: 3vw;
+  width: 5vw;
+  margin: 0 0.5rem;
+`
+
+const StyledServices = styled(StyledAbout)`
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+`
+
+const StyledCards = styled.div `
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const StyledCard = styled.div `
+  flex-basis: 4rem;
+  padding: 3rem 2rem 1rem 0;
+  .icon {
+      display: flex;
+      align-items: center;
+    h3 {
+      padding-bottom: 1rem;
+      background: white;
+      color: black;
+    }
+  }
 `
 
 export default SkillsSection

@@ -34,7 +34,7 @@ h2 {
   font-size: 4rem;
 }
 
-h3{
+h3 {
   color: white;
 }
 
