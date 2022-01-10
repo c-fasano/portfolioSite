@@ -45,22 +45,7 @@ const SkillsSection = () => {
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={Python} alt="Python Logo"/>         
-            </div>
-          </StyledCard>
-          <StyledCard>
-            <div className="icon">
-              <Logo className="Logo" src={Node} alt="Node.js Logo"/>
-            </div>
-          </StyledCard>
-          <StyledCard>
-            <div className="icon">
-              <Logo className="Logo" src={ReactImg} alt="React Logo"/>         
-            </div>
-          </StyledCard>
-          <StyledCard>
-            <div className="icon">
-              <Logo className="Logo" src={Redux} alt="Redux Logo"/>
+              <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
             </div>
           </StyledCard>
           <StyledCard>
@@ -70,12 +55,27 @@ const SkillsSection = () => {
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
+              <Logo className="Logo" src={ReactImg} alt="React Logo"/>         
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Node} alt="Node.js Logo"/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Python} alt="Python Logo"/>         
             </div>
           </StyledCard>
           <StyledCard>
             <div className="icon">
               <Logo className="Logo" src={Django} alt="Django Logo"/>
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <Logo className="Logo" src={Redux} alt="Redux Logo"/>
             </div>
           </StyledCard>
           <StyledCard>
