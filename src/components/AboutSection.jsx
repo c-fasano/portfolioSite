@@ -1,5 +1,6 @@
 import React from "react";
-import self from "../images/Picture1.png"
+import styled from "styled-components";
+import self from "../images/Picture1.png";
 
 const AboutSection = () => {
   return (
@@ -13,7 +14,7 @@ const AboutSection = () => {
             <h2>I am Cole Fasano</h2>
           </div>
           <div className="hidden">
-            <h2><span>Full Stack</span>Developer</h2>
+            <h2>Welcome to my <span>Portfolio</span></h2>
           </div>
         </div>
         <button>Contact Me</button> 
@@ -25,4 +26,3 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
