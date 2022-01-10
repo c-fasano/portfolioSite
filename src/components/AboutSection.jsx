@@ -5,7 +5,7 @@ import self from "../images/Picture1.png";
 const AboutSection = () => {
   return (
     <div>
-      <div className="description">
+      <StyledDescription>
         <div className="title">
           <div className="hidden">
             <h2>Hello There!</h2>
@@ -18,7 +18,7 @@ const AboutSection = () => {
           </div>
         </div>
         <button>Contact Me</button> 
-      </div>
+      </StyledDescription>
       <div className="image">
         <img src={self} alt="Sitting down in chair Black and White" />
       </div>
@@ -26,3 +26,15 @@ const AboutSection = () => {
   )
 }
 
+//Styled Components
+
+const StyledDescription = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+`
+
+export default AboutSection
