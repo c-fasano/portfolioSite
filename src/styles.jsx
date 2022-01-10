@@ -27,4 +27,7 @@ img {
 export const Hide = styled.div `
 overflow: hidden;
 `
-
+export const Logo = styled.img`
+width: 5vw;
+margin: 0 0.5rem;
+`

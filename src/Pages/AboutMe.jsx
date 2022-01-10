@@ -2,12 +2,10 @@ import React from "react";
 import AboutSection from "../components/AboutSection";
 import FaqSection from "../components/FaqSection";
 import SkillsSection from "../components/SkillsSection";
-import Nav from "../components/Nav";
 
-const AboutUs = () => {
+const AboutMe = () => {
   return (
     <>
-      <Nav />
       <AboutSection />
       <SkillsSection />
       <FaqSection />
@@ -15,4 +13,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutMe

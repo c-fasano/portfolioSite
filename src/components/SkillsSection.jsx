@@ -15,7 +15,7 @@ import Redux from "../images/redux.svg"
 import SASS from "../images/sass-1.svg";
 import Stack from "../images/Stack.jpg";
 
-import { StyledAbout, StyledDescription, StyledImage, Hide } from "../styles";
+import { StyledAbout, StyledDescription, StyledImage, Hide, Logo } from "../styles";
 
 const SkillsSection = () => {
   return (
@@ -92,10 +92,7 @@ const SkillsSection = () => {
   )
 }
 
-const Logo = styled.img`
-  width: 5vw;
-  margin: 0 0.5rem;
-`
+
 
 const StyledServices = styled(StyledAbout)`
   h2 {
