@@ -64,23 +64,23 @@ const SkillsSection = () => {
             </div>
           </StyledCard>
           <StyledCard>
-            <div className="icon">
-              <Logo className="Logo" src={Express} alt="Redux Logo" style={{background: "white", marginTop: "30%"}}/>
+            <div className="icon" style={{background: "white",}}>
+              <Logo className="Logo" src={Express} alt="Express Logo" style={{background: "white", marginTop: "35%", paddingBottom: "35%"}}/>
             </div>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={Mongo} alt="Redux Logo"/>
+              <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
             </div>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={Django} alt="Redux Logo"/>
+              <Logo className="Logo" src={Django} alt="Django Logo"/>
             </div>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <Logo className="Logo" src={JQuery} alt="Redux Logo"/>
+              <Logo className="Logo" src={JQuery} alt="JQuery Logo"/>
             </div>
           </StyledCard>
         </StyledCards>
