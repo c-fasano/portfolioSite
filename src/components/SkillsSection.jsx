@@ -21,7 +21,7 @@ const SkillsSection = () => {
   return (
     <StyledServices>
       <StyledDescription>
-        <h2>Full <span>Stack</span>Developer</h2>
+        <h2>Full <span>Stack</span> Developer</h2>
         <StyledCards>
           <StyledCard>
             <div className="icon">

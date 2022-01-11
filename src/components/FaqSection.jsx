@@ -1,37 +1,40 @@
 import React from "react";
 
+import { AnimateSharedLayout } from "framer-motion";
 import styled from "styled-components";
-import { AboutSection, StyledAbout } from "../styles"
+import { StyledAbout } from "../styles"
+
+import Toggle from "./Toggle";
 
 const FaqSection = () => {
   return (
     <StyledFaq>
       <h2>More About <span>Me</span></h2>
       <br/><br/><br/>
-      <div className="question">
-        <h4>Education</h4>
-        <div className="answer">
-          <p>Bootcamp Graduate</p>
-          <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
-        </div>
-        <div className="divider"></div>
-      </div>
-      <div className="question">
-        <h4>Current Projects</h4>
-        <div className="answer">
-          <p>Bootcamp Graduate</p>
-          <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
-        </div>
-        <div className="divider"></div>
-      </div>
-      <div className="question">
-        <h4>Want to Work With Me</h4>
-        <div className="answer">
-          <p>Bootcamp Graduate</p>
-          <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
-        </div>
-        <div className="divider"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title ="My Education">
+            <div className="answer">
+              <p>Bootcamp Graduate</p>
+              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+            </div>  
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="Current Projects">      
+            <div className="answer">
+              <p>Bootcamp Graduate</p>
+              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+            </div>
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="Collaborate With Me">     
+            <div className="answer">
+              <p>Bootcamp Graduate</p>
+              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+            </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </StyledFaq>
   )
 }
