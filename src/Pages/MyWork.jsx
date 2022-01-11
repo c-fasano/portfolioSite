@@ -1,18 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
+import Brush from "../images/BrushStrokes.png"
+import Con4 from "../images/Connect4.png";
 import CSS from "../images/css-3.svg";
 import Django from "../images/django.svg";
-import Express from "../images/express-109.svg"
-import Google from "../images/google-1-1.svg"
+import Express from "../images/express-109.svg";
+import Folio from "../images/Folio.png";
+import Google from "../images/google-1-1.svg";
 import HTML from "../images/html-1.svg";
 import JQuery from "../images/jquery-4.svg";
 import JS from "../images/logo-javascript.svg";
 import Mongo from "../images/mongodb-icon-1.svg";
+import Music from "../images/MusicPlayer.png"
 import Node from "../images/nodejs-icon.svg";
 import Post from "../images/postgresql.svg";
 import Python from "../images/python-5.svg";
 import ReactImg from "../images/react-2.svg";
+import Reflections from "../images/Reflections.png";
 import SASS from "../images/sass-1.svg";
 
 import { Logo, StyledAbout } from "../styles"
@@ -26,6 +31,7 @@ const MyWork = () => {
           <h2>Connect 4 Browser Game</h2>
           <p>My first project - a browser verison of the classic Connect4 game.</p>
           <Logo className="Logo" src={JS} alt="JS Logo"/>
+          <Screenshot src={Con4} alt="Connect 4" />
           <div className="divider"></div>
         </div>
         <div className="project">
@@ -36,6 +42,7 @@ const MyWork = () => {
           <Logo className="Logo" src={JS} alt="JS Logo"/>
           <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
           <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
+          <Screenshot src={Brush} alt="Artwork website" />
           <div className="divider"></div>
         </div>
         <div className="project">
@@ -48,6 +55,7 @@ const MyWork = () => {
           <Logo className="Logo" src={Python} alt="Python Logo"/>
           <Logo className="Logo" src={Django} alt="Django Logo"/>
           <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
+          <Screenshot src={Reflections} alt="Reflections website" />
           <div className="divider"></div>
         </div>
         <div className="project">
@@ -58,6 +66,7 @@ const MyWork = () => {
           <Logo className="Logo" src={SASS} alt="SASS Logo"/>
           <Logo className="Logo" src={JS} alt="JS Logo"/>
           <Logo className="Logo" src={ReactImg} alt="React Logo"/>
+          <Screenshot src={Music} alt="music player website" />
           <div className="divider"></div>
         </div>
         <div className="project">
@@ -71,6 +80,7 @@ const MyWork = () => {
           <Logo className="Logo" src={Express} alt="Express Logo" style={{background: "white", width: "10vw"}}/>
           <Logo className="Logo" src={ReactImg} alt="React Logo"/>
           <Logo className="Logo" src={Node} alt="Node.js Logo"/>
+          <Screenshot src={Folio} alt="Folio website homepage" />
           <div className="divider"></div>
         </div>
       </StyledProjects>
@@ -95,5 +105,12 @@ const StyledProjects = styled(StyledAbout)`
     width: 100%;
   }
 `
+const Screenshot = styled.img `
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding-top: 2rem;
+`
+
 
 export default MyWork
