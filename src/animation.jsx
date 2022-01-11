@@ -59,7 +59,7 @@ export const imageAnimation = {
 }
 
 export const screenshotAnimation = {
-  hidden: { scale: .5, opacity: 0 },
+  hidden: { scale: 1.5, opacity: 0 },
   show: {
     scale: 1,
     opacity: 1,

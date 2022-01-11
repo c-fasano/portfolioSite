@@ -16,10 +16,15 @@ import SASS from "../images/sass-1.svg";
 import Stack from "../images/Stack.jpg";
 
 import { StyledAbout, StyledDescription, StyledImage, Hide, Logo } from "../styles";
+import { imageAnimation } from "../animation";
+import { useScroll } from "./useScroll";
 
 const SkillsSection = () => {
+
+  const[element, controls] = useScroll()
+
   return (
-    <StyledServices>
+    <StyledServices variants={imageAnimation} animate={controls} ref={element}>
       <StyledDescription>
         <h2>Full <span>Stack</span> Developer</h2>
         <StyledCards>

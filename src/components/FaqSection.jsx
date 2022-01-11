@@ -3,12 +3,17 @@ import React from "react";
 import { AnimateSharedLayout } from "framer-motion";
 import styled from "styled-components";
 import { StyledAbout } from "../styles"
+import { useScroll } from "./useScroll";
 
+import { imageAnimation } from "../animation";
 import Toggle from "./Toggle";
 
 const FaqSection = () => {
+
+  const[element, controls] = useScroll()
+
   return (
-    <StyledFaq>
+    <StyledFaq variants={imageAnimation} animate={controls} ref={element}>
       <h2>More About <span>Me</span></h2>
       <br/><br/><br/>
       <AnimateSharedLayout>
