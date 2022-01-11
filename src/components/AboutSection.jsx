@@ -25,7 +25,7 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnimation}>Welcome to my Portfolio</motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={fadeAnimation}>I am a full stack developer based in Peoria, Illinois. I am driven by delivering work that pleases both visually and functionally. </motion.p>
+        <motion.p variants={fadeAnimation}>I am a full stack developer based in Peoria, Illinois. I am driven by delivering work that pleases both visually and functionally. Sometimes I make really silly mistakes and break code or entire repos. </motion.p>
         <Link to="/contact">
           <motion.button variants={buttonFadeAnimation}>Contact Me</motion.button>
         </Link>
