@@ -7,7 +7,9 @@ export const pageAnimation = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1
+      duration: 1,
+      when: "beforeChildren",
+      staggerChildren: .5
     }
   },
   exit: {
@@ -54,5 +56,27 @@ export const imageAnimation = {
       ease: "easeOut",
       duration: 1.25 
     }
+  }
+}
+
+export const screenshotAnimation = {
+  hidden: { scale: 1.5, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { 
+      ease: "easeOut",
+      duration: 1.25 
+    }
+  }
+}
+
+export const dividerAnimation = {
+  hidden: {
+    width: "0%"
+  },
+  show: {
+    width: "100%",
+    transition: { duration: 0.75 }
   }
 }
