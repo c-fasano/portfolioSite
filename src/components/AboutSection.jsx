@@ -2,8 +2,8 @@ import React from "react";
 import self from "../images/Picture1.png";
 
 import { motion } from "framer-motion";
-import { introAnimation } from "../animation";
-import { titleAnimation } from "../animation";
+import { introAnimation, titleAnimation, fadeAnimation, buttonFadeAnimation, imageAnimation } from "../animation";
+import Wave from "./Wave";
 
 import { StyledAbout, StyledDescription, StyledImage, Hide } from "../styles";
 
@@ -23,12 +23,13 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnimation}>Welcome to my Portfolio</motion.h2>
           </Hide>
         </motion.div>
-        <p>I am a full stack developer based in Peoria, Illinois. I am driven by delivering work that pleases both visually and functionally. </p>
-        <button>Contact Me</button> 
+        <motion.p variants={fadeAnimation}>I am a full stack developer based in Peoria, Illinois. I am driven by delivering work that pleases both visually and functionally. </motion.p>
+        <motion.button variants={buttonFadeAnimation}>Contact Me</motion.button> 
       </StyledDescription>
       <StyledImage>
-        <img src={self} alt="Sitting down in chair Black and White" style={{width: "85%"}}/>
+        <motion.img variants={imageAnimation} src={self} alt="Sitting down in chair Black and White" style={{width: "85%"}}/>
       </StyledImage>
+      <Wave />
     </StyledAbout>
   )
 }

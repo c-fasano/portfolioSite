@@ -9,6 +9,7 @@ padding: 5rem 10rem;
 color: white;
 `
 export const StyledDescription = styled.div `
+z-index: 2;
 flex: 1;
 padding-right: 5rem;
 h2 {
@@ -16,6 +17,7 @@ h2 {
 }
 `
 export const StyledImage = styled.div `
+z-index: 2;
 flex: 1;
 overflow: hidden;
 img {

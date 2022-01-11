@@ -73,7 +73,7 @@ const MyWork = () => {
           <div className="divider"></div>
         </div>
         <div className="project">
-          <h2>Connect 4 Browser Game</h2>
+          <h2>Folio</h2>
           <p>Full MERN stack application built with a team of myself and 3 others. This application is for freelanceers to utilize as a tool to keep their work, clients and themselves organized.</p>
           <Logo className="Logo" src={HTML} alt="HTML Logo"/>
           <Logo className="Logo" src={CSS} alt="CSS Logo"/>

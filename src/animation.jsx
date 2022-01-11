@@ -21,10 +21,38 @@ export const pageAnimation = {
 
 export const introAnimation = {
   hidden: { x: 200 },
-  show: { x: 0, transition: { duration: 1.25, ease: "easeOut", staggerChildren: 0.35 }}
+  show: { x: 0, transition: { duration: 1.25, ease: "easeOut", staggerChildren: 0.5 }}
 }
 
 export const titleAnimation = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { duration: 1 }}
+}
+
+export const fadeAnimation = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { ease: "easeOut", duration: 1.5 },
+  },
+};
+
+export const buttonFadeAnimation = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { ease: "easeOut", duration: 2 },
+  },
+};
+
+export const imageAnimation = {
+  hidden: { scale: .5, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { 
+      ease: "easeOut",
+      duration: 1.25 
+    }
+  }
 }
