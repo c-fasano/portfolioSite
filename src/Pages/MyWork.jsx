@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { AnimateSharedLayout } from "framer-motion";
 import { motion } from "framer-motion";
 
-import { pageAnimation, fadeAnimation, titleAnimation, screenshotAnimation, dividerAnimation, sliderAnimation, sliderContainer } from "../animation";
+import { pageAnimation, fadeAnimation, imageAnimation, screenshotAnimation, dividerAnimation, sliderAnimation, sliderContainer } from "../animation";
 
 import Brush from "../images/BrushStrokes.png"
 import Con4 from "../images/Connect4.png";
@@ -25,9 +24,15 @@ import Reflections from "../images/Reflections.png";
 import SASS from "../images/sass-1.svg";
 
 import { Logo } from "../styles"
-import Toggle from "../components/Toggle";
+import { useScroll } from "../components/useScroll"
 
 const MyWork = () => {
+
+  const [element, controls] = useScroll()
+  const [element2, controls2] = useScroll()
+  const [element3, controls3] = useScroll()
+  const [element4, controls4] = useScroll()
+
   return (
     <Work
       style={{ background: "lightgrey" }}
@@ -42,10 +47,9 @@ const MyWork = () => {
         <Frame3 variants={sliderAnimation}></Frame3>
         <Frame4 variants={sliderAnimation}></Frame4>
       </motion.div>
-      
-      <AnimateSharedLayout>
-        <Toggle title="Connect 4 Browser Game">
-          <Project variants={titleAnimation}>
+
+          <Project variants={imageAnimation}>
+            <motion.h2 variants={fadeAnimation}>Connect 4 Browser Game</motion.h2>
             <motion.div variants={dividerAnimation} className="divider"></motion.div>
             <p>My first project - a browser verison of the classic Connect4 game.</p>
             <Logo className="Logo" src={JS} alt="JS Logo"/>
@@ -53,12 +57,9 @@ const MyWork = () => {
               <Screenshot variants={screenshotAnimation} src={Con4} alt="Connect 4" />
             </Hide>
           </Project>
-        </Toggle>
-      </AnimateSharedLayout>
 
-      <AnimateSharedLayout>
-        <Toggle title="Brush Strokes">
-          <Project variants={titleAnimation}>
+          <Project ref={element} variants={imageAnimation} animate={controls} initial="hidden">
+            <motion.h2 variants={fadeAnimation}>Brush Strokes</motion.h2>
             <motion.div variants={dividerAnimation} className="divider"></motion.div>
             <p>This is a MEN stack application designed to be a platform where users could share their favorite artists and pieces. I also used Google Authentication in this application.</p>
             <Logo className="Logo" src={HTML} alt="HTML Logo"/>
@@ -70,12 +71,9 @@ const MyWork = () => {
               <Screenshot variants={screenshotAnimation} src={Brush} alt="Artwork website" />
             </Hide>
           </Project>
-        </Toggle>
-      </AnimateSharedLayout>
 
-      <AnimateSharedLayout>
-        <Toggle title="Reflections">
-          <Project variants={titleAnimation}>
+          <Project ref={element2} variants={imageAnimation} animate={controls2} initial="hidden">
+            <motion.h2 variants={fadeAnimation}>Reflections</motion.h2>
             <motion.div variants={dividerAnimation} className="divider"></motion.div>
             <p>This application is designed to be a place for individuals to jot down and store their memories. I created a custom logo for this project using ProCreate.</p>
             <Logo className="Logo" src={HTML} alt="HTML Logo"/>
@@ -89,12 +87,9 @@ const MyWork = () => {
               <Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website" />
             </Hide>
           </Project>
-        </Toggle>
-      </AnimateSharedLayout>
 
-      <AnimateSharedLayout>
-        <Toggle title="Music Player">
-          <Project variants={titleAnimation}>
+          <Project ref={element3} variants={imageAnimation} animate={controls3} initial="hidden">
+            <motion.h2 variants={fadeAnimation}>Music Player</motion.h2>
             <motion.div variants={dividerAnimation} className="divider"></motion.div>
             <p>This was the first React single page application that I created. This is also the first time I used SASS.</p>
             <Logo className="Logo" src={HTML} alt="HTML Logo"/>
@@ -106,12 +101,9 @@ const MyWork = () => {
               <Screenshot variants={screenshotAnimation} src={Music} alt="music player website" />
             </Hide>
           </Project>
-        </Toggle>
-      </AnimateSharedLayout>
 
-      <AnimateSharedLayout>
-        <Toggle title="Folio">
-          <Project variants={titleAnimation}>
+          <Project ref={element4} variants={imageAnimation} animate={controls4} initial="hidden">
+            <motion.h2 variants={fadeAnimation}>Folio</motion.h2>
             <motion.div variants={dividerAnimation} className="divider"></motion.div>
             <p>Full MERN stack application built with a team of myself and 3 others. This application is for freelanceers to utilize as a tool to keep their work, clients and themselves organized.</p>
             <Logo className="Logo" src={HTML} alt="HTML Logo"/>
@@ -125,10 +117,7 @@ const MyWork = () => {
             <Hide>
               <Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website homepage" />
             </Hide>
-          </Project>
-        </Toggle>
-      </AnimateSharedLayout>
-      
+          </Project>     
     </Work>
   )
 }
@@ -161,7 +150,7 @@ const Work = styled(motion.div)`
 `
 
 const Project = styled(motion.div)`
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
   .line {
     height: 0.5rem;
     background: #23d997;
