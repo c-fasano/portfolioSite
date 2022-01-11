@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
+import { AnimateSharedLayout } from "framer-motion";
 import { motion } from "framer-motion";
+
 import { pageAnimation, fadeAnimation, titleAnimation, screenshotAnimation, dividerAnimation, sliderAnimation, sliderContainer } from "../animation";
 
 import Brush from "../images/BrushStrokes.png"
@@ -23,7 +24,8 @@ import ReactImg from "../images/react-2.svg";
 import Reflections from "../images/Reflections.png";
 import SASS from "../images/sass-1.svg";
 
-import { Logo, } from "../styles"
+import { Logo } from "../styles"
+import Toggle from "../components/Toggle";
 
 const MyWork = () => {
   return (
@@ -40,77 +42,92 @@ const MyWork = () => {
         <Frame3 variants={sliderAnimation}></Frame3>
         <Frame4 variants={sliderAnimation}></Frame4>
       </motion.div>
+      
+      <AnimateSharedLayout>
+        <Toggle title="Connect 4 Browser Game">
+          <Project variants={titleAnimation}>
+            <motion.div variants={dividerAnimation} className="divider"></motion.div>
+            <p>My first project - a browser verison of the classic Connect4 game.</p>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Hide>
+              <Screenshot variants={screenshotAnimation} src={Con4} alt="Connect 4" />
+            </Hide>
+          </Project>
+        </Toggle>
+      </AnimateSharedLayout>
 
-      <Project variants={titleAnimation}>
-        <motion.h2 vairants={fadeAnimation}>Connect 4 Browser Game</motion.h2>
-        <motion.div variants={dividerAnimation} className="divider"></motion.div>
-        <p>My first project - a browser verison of the classic Connect4 game.</p>
-        <Logo className="Logo" src={JS} alt="JS Logo"/>
-        <Hide>
-          <Screenshot variants={screenshotAnimation} src={Con4} alt="Connect 4" />
-        </Hide>
-      </Project>
+      <AnimateSharedLayout>
+        <Toggle title="Brush Strokes">
+          <Project variants={titleAnimation}>
+            <motion.div variants={dividerAnimation} className="divider"></motion.div>
+            <p>This is a MEN stack application designed to be a platform where users could share their favorite artists and pieces. I also used Google Authentication in this application.</p>
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
+            <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
+            <Hide>
+              <Screenshot variants={screenshotAnimation} src={Brush} alt="Artwork website" />
+            </Hide>
+          </Project>
+        </Toggle>
+      </AnimateSharedLayout>
 
-      <Project variants={titleAnimation}>
-        <motion.h2 vairants={fadeAnimation}>Brush Strokes</motion.h2>
-        <motion.div variants={dividerAnimation} className="divider"></motion.div>
-        <p>This is a MEN stack application designed to be a platform where users could share their favorite artists and pieces. I also used Google Authentication in this application.</p>
-        <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-        <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-        <Logo className="Logo" src={JS} alt="JS Logo"/>
-        <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
-        <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
-        <Hide>
-          <Screenshot variants={screenshotAnimation} src={Brush} alt="Artwork website" />
-        </Hide>
-      </Project>
+      <AnimateSharedLayout>
+        <Toggle title="Reflections">
+          <Project variants={titleAnimation}>
+            <motion.div variants={dividerAnimation} className="divider"></motion.div>
+            <p>This application is designed to be a place for individuals to jot down and store their memories. I created a custom logo for this project using ProCreate.</p>
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={JQuery} alt="JQuery Logo"/>
+            <Logo className="Logo" src={Python} alt="Python Logo"/>
+            <Logo className="Logo" src={Django} alt="Django Logo"/>
+            <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
+            <Hide>
+              <Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website" />
+            </Hide>
+          </Project>
+        </Toggle>
+      </AnimateSharedLayout>
 
-      <Project variants={titleAnimation}>
-        <motion.h2 vairants={fadeAnimation}>Reflections</motion.h2>
-        <motion.div variants={dividerAnimation} className="divider"></motion.div>
-        <p>This application is designed to be a place for individuals to jot down and store their memories. I created a custom logo for this project using ProCreate.</p>
-        <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-        <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-        <Logo className="Logo" src={JS} alt="JS Logo"/>
-        <Logo className="Logo" src={JQuery} alt="JQuery Logo"/>
-        <Logo className="Logo" src={Python} alt="Python Logo"/>
-        <Logo className="Logo" src={Django} alt="Django Logo"/>
-        <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
-        <Hide>
-          <Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website" />
-        </Hide>
-      </Project>
+      <AnimateSharedLayout>
+        <Toggle title="Music Player">
+          <Project variants={titleAnimation}>
+            <motion.div variants={dividerAnimation} className="divider"></motion.div>
+            <p>This was the first React single page application that I created. This is also the first time I used SASS.</p>
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={SASS} alt="SASS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={ReactImg} alt="React Logo"/>
+            <Hide>
+              <Screenshot variants={screenshotAnimation} src={Music} alt="music player website" />
+            </Hide>
+          </Project>
+        </Toggle>
+      </AnimateSharedLayout>
 
-      <Project variants={titleAnimation}>
-        <motion.h2 vairants={fadeAnimation}>Music Player</motion.h2>
-        <motion.div variants={dividerAnimation} className="divider"></motion.div>
-        <p>This was the first React single page application that I created. This is also the first time I used SASS.</p>
-        <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-        <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-        <Logo className="Logo" src={SASS} alt="SASS Logo"/>
-        <Logo className="Logo" src={JS} alt="JS Logo"/>
-        <Logo className="Logo" src={ReactImg} alt="React Logo"/>
-        <Hide>
-          <Screenshot variants={screenshotAnimation} src={Music} alt="music player website" />
-        </Hide>
-      </Project>
-
-      <Project variants={titleAnimation}>
-        <motion.h2 vairants={fadeAnimation}>Folio</motion.h2>
-        <motion.div variants={dividerAnimation} className="divider"></motion.div>
-        <p>Full MERN stack application built with a team of myself and 3 others. This application is for freelanceers to utilize as a tool to keep their work, clients and themselves organized.</p>
-        <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-        <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-        <Logo className="Logo" src={SASS} alt="SASS Logo"/>
-        <Logo className="Logo" src={JS} alt="JS Logo"/>
-        <Logo className="Logo" src={Mongo} alt="<MongoDB> Logo"/>
-        <Logo className="Logo" src={Express} alt="Express Logo" style={{background: "white", width: "10vw"}}/>
-        <Logo className="Logo" src={ReactImg} alt="React Logo"/>
-        <Logo className="Logo" src={Node} alt="Node.js Logo"/>
-        <Hide>
-          <Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website homepage" />
-        </Hide>
-      </Project>
+      <AnimateSharedLayout>
+        <Toggle title="Folio">
+          <Project variants={titleAnimation}>
+            <motion.div variants={dividerAnimation} className="divider"></motion.div>
+            <p>Full MERN stack application built with a team of myself and 3 others. This application is for freelanceers to utilize as a tool to keep their work, clients and themselves organized.</p>
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={SASS} alt="SASS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={Mongo} alt="<MongoDB> Logo"/>
+            <Logo className="Logo" src={Express} alt="Express Logo" style={{background: "white", width: "10vw"}}/>
+            <Logo className="Logo" src={ReactImg} alt="React Logo"/>
+            <Logo className="Logo" src={Node} alt="Node.js Logo"/>
+            <Hide>
+              <Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website homepage" />
+            </Hide>
+          </Project>
+        </Toggle>
+      </AnimateSharedLayout>
       
     </Work>
   )

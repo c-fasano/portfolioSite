@@ -1,7 +1,7 @@
 import React from "react";
-
 import { AnimateSharedLayout } from "framer-motion";
 import styled from "styled-components";
+
 import { StyledAbout } from "../styles"
 import { useScroll } from "./useScroll";
 
@@ -56,7 +56,7 @@ const StyledFaq = styled(StyledAbout)`
     margin: 2rem 0;
     width: 100%;
   }
-  .question {
+  .toggle {
     padding: 3rem 0;
     cursor: pointer;
   }
