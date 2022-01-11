@@ -15,7 +15,7 @@ import Redux from "../images/redux.svg"
 import SASS from "../images/sass-1.svg";
 import Stack from "../images/Stack.jpg";
 
-import { StyledAbout, StyledDescription, StyledImage, Hide, Logo } from "../styles";
+import { StyledAbout, StyledDescription, StyledImage, Logo } from "../styles";
 import { imageAnimation } from "../animation";
 import { useScroll } from "./useScroll";
 
