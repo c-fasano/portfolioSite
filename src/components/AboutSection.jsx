@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import self from "../images/Picture1.png";
 
 import { motion } from "framer-motion";
@@ -24,7 +26,11 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fadeAnimation}>I am a full stack developer based in Peoria, Illinois. I am driven by delivering work that pleases both visually and functionally. </motion.p>
-        <motion.button variants={buttonFadeAnimation}>Contact Me</motion.button> 
+        <Link to="/contact">
+          <motion.button variants={buttonFadeAnimation}>Contact Me</motion.button>
+        </Link>
+
+        {/*   */}
       </StyledDescription>
       <StyledImage>
         <motion.img variants={imageAnimation} src={self} alt="Sitting down in chair Black and White" style={{width: "85%"}}/>
