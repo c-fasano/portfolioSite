@@ -160,7 +160,7 @@ const Project = styled(motion.div)`
 
 const Screenshot = styled(motion.img) `
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   margin-left: auto;
   object-fit: cover;
   overflow-y: scroll;
