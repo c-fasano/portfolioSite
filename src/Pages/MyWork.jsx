@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 import Brush from "../images/BrushStrokes.png"
 import Con4 from "../images/Connect4.png";
 import CSS from "../images/css-3.svg";
@@ -24,7 +27,7 @@ import { Logo, StyledAbout } from "../styles"
 
 const MyWork = () => {
   return (
-    <div>
+    <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <h1>My Work</h1>
       <StyledProjects>
         <div className="project">
@@ -84,7 +87,7 @@ const MyWork = () => {
           <div className="divider"></div>
         </div>
       </StyledProjects>
-    </div>
+    </motion.div>
   )
 }
 
