@@ -16,7 +16,12 @@ const App = () => {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence 
+        exitBeforeEnter
+        onExitComplete={() => {
+          window.scrollTo(0, 0)
+        }}
+      >
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AboutMe />} />
           <Route path="/work" element={<MyWork />} />
