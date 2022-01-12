@@ -19,7 +19,6 @@ const ContactMe = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: "grey" }}
     >
       <StyledTitle>
         <Hide>

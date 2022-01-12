@@ -25,9 +25,9 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1vh 5%;
-  background: #282828;
+  background: #000000;
   a {
-    color: white;
+    color: #60A97B;
     text-decoration: none;
     font-family: 'Cinzel', serif;
   }

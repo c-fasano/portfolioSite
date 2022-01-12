@@ -60,7 +60,7 @@ const StyledFaq = styled(StyledAbout)`
     font-weight: lighter;
   }
   .divider {
-    background: #cccccc;
+    background: #60A97B;
     height: 0.2rem; 
     margin: 2rem 0;
     width: 100%;

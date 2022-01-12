@@ -7,7 +7,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 5vh 0 5vh 5%;
-color: white;
+color: #FAFAFF;
 @media (max-width: 1100px) {
   display: block;
   padding: 2vh 2%;

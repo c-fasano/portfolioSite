@@ -35,7 +35,6 @@ const MyWork = () => {
 
   return (
     <Work
-      style={{ background: "lightgrey" }}
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
@@ -139,13 +138,14 @@ const Work = styled(motion.div)`
     font-size: 2.5rem;
     padding-bottom: 1rem;
     font-weight: lighter;
+    color: #FAFAFF;
   }
   p {
     padding-top: 1rem;
-    color: black;
+    color: #FAFAFF;
   }
   .divider {
-    background: #000000;
+    background: #60A97B;
     height: 0.2rem; 
     margin: 2rem 0;
     width: 100%;
@@ -174,8 +174,8 @@ padding-bottom: 1rem;
 
 const Screenshot = styled(motion.img) `
   width: 100%;
+  height: 100vh;
   object-fit: scale-down;
-  overflow-y: scroll;
   @media (max-width: 1900px) {
     width: 100vh;
   }
@@ -183,14 +183,17 @@ const Screenshot = styled(motion.img) `
     width: 86%;
     margin: -17vh 7% -17vh 7%;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     width: 76%;
-    height: 75vh;
-    margin: -20vh 12% -20vh 12%;
+    margin: -30vh 12% -30vh 12%;
+  }
+  @media (max-width: 700px) {
+    width: 70%;
+    margin: -36vh 15% -36vh 15%;
   }
   @media (max-width: 450px) {
     width: 64%;
-    margin: -26vh 17% -26vh 17%;
+    margin: -40vh 17% -40vh 17%;
   }
 `
 

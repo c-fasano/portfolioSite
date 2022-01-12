@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle `
 }
 
 body {
-  background: #1b1b1b;
+  background: #30343F;
   overflow-x: hidden;
   /* font-family: "insertGoogleFontHere", sans-serif */
 }
@@ -20,14 +20,15 @@ button {
   font-size: 1.5vw;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 3px solid blue;
+  border: 3px solid #5167B8 ;
   background: transparent;
-  color: white;
+  color: #FAFAFF;
   transition: all 0.5s ease;
+  font-family: 'Roboto', sans-serif;
   /* font-family: "insertGoogleFontHere", sans-serif */
 
   &:hover {
-    background-color: blue;
+    background-color: #5167B8;
     color: white;
   }
 }
@@ -44,7 +45,7 @@ h3 {
 
 h4 {
   font-weight: bold;
-  color: white;
+  color: #5167B8;
   font-size: 2vw;
   font-family: 'Cinzel', serif;
 }
@@ -54,13 +55,13 @@ a {
 }
 
 span {
-  font-weight: bold;
-  color: blue;
+  font-weight: 1000;
+  color: #5167B8;
 }
 
 p {
   padding: 3rem 0;
-  color: #ccc;
+  color: #FAFAFF;
   font-size: 1.5vw;
   line-height: 150%;
   font-family: 'Roboto', sans-serif;
