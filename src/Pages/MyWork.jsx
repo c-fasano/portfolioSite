@@ -54,7 +54,7 @@ const MyWork = () => {
             <p>My first project - a browser verison of the classic Connect4 game.</p>
             <Logo className="Logo" src={JS} alt="JS Logo"/>
             <Hide>
-              <Screenshot variants={screenshotAnimation} src={Con4} alt="Connect 4" />
+              <a href="https://vigilant-kare-5690e3.netlify.app/"><Screenshot variants={screenshotAnimation} src={Con4} alt="Connect 4 Board"/></a> 
             </Hide>
           </Project>
 
@@ -68,7 +68,7 @@ const MyWork = () => {
             <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
             <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
             <Hide>
-              <Screenshot variants={screenshotAnimation} src={Brush} alt="Artwork website" />
+              <a href="https://drawn-to-it.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Brush} alt="Artist website"/></a> 
             </Hide>
           </Project>
 
@@ -84,7 +84,7 @@ const MyWork = () => {
             <Logo className="Logo" src={Django} alt="Django Logo"/>
             <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
             <Hide>
-              <Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website" />
+              <a href="https://memory-reflections.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website"/></a> 
             </Hide>
           </Project>
 
@@ -98,7 +98,7 @@ const MyWork = () => {
             <Logo className="Logo" src={JS} alt="JS Logo"/>
             <Logo className="Logo" src={ReactImg} alt="React Logo"/>
             <Hide>
-              <Screenshot variants={screenshotAnimation} src={Music} alt="music player website" />
+              <a href="https://festive-almeida-ab2690.netlify.app/"><Screenshot variants={screenshotAnimation} src={Music} alt="Folio website"/></a> 
             </Hide>
           </Project>
 
@@ -115,7 +115,7 @@ const MyWork = () => {
             <Logo className="Logo" src={ReactImg} alt="React Logo"/>
             <Logo className="Logo" src={Node} alt="Node.js Logo"/>
             <Hide>
-              <Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website homepage" />
+              <a href="https://folio-front24.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website"/></a> 
             </Hide>
           </Project>     
     </Work>
