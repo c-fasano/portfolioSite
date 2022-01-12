@@ -35,6 +35,7 @@ button {
 h2 {
   font-weight: lighter;
   font-size: 3.5vw;
+  font-family: 'Cinzel', serif;
 }
 
 h3 {
@@ -45,6 +46,7 @@ h4 {
   font-weight: bold;
   color: white;
   font-size: 2vw;
+  font-family: 'Cinzel', serif;
 }
 
 a {
@@ -61,6 +63,7 @@ p {
   color: #ccc;
   font-size: 1.5vw;
   line-height: 150%;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 1100px) {

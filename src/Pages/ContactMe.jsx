@@ -74,6 +74,7 @@ const StyledSocials = styled(motion.div) `
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   .direct {
     padding-bottom: 2rem;
   }
@@ -82,6 +83,9 @@ const StyledSocials = styled(motion.div) `
   }
   .info {
     padding-bottom: 2rem;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
   }
 
   @media (max-width: 1500px) {

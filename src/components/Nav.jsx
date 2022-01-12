@@ -29,6 +29,7 @@ const StyledNav = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    font-family: 'Cinzel', serif;
   }
   ul {
     display: flex;
