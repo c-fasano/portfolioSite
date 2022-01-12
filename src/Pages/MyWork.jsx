@@ -62,11 +62,13 @@ const MyWork = () => {
           <motion.h2 variants={fadeAnimation}>Brush Strokes</motion.h2>
           <motion.div variants={dividerAnimation} className="divider"></motion.div>
           <p>This is a MEN stack application designed to be a platform where users could share their favorite artists and pieces. I also used Google Authentication in this application.</p>
-          <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-          <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-          <Logo className="Logo" src={JS} alt="JS Logo"/>
-          <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
-          <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
+          <div className="holder">
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={Mongo} alt="MongoDB Logo"/>
+            <Logo className="Logo" src={Google} alt="Google Logo" style={{ width: "11vw" }}/>
+          </div>
           <Hide>
             <a href="https://drawn-to-it.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Brush} alt="Artist website"/></a> 
           </Hide>
@@ -76,13 +78,15 @@ const MyWork = () => {
           <motion.h2 variants={fadeAnimation}>Reflections</motion.h2>
           <motion.div variants={dividerAnimation} className="divider"></motion.div>
           <p>This application is designed to be a place for individuals to jot down and store their memories. I created a custom logo for this project using ProCreate.</p>
-          <Logo className="Logo" src={HTML} alt="HTML Logo"/>
-          <Logo className="Logo" src={CSS} alt="CSS Logo"/>
-          <Logo className="Logo" src={JS} alt="JS Logo"/>
-          <Logo className="Logo" src={JQuery} alt="JQuery Logo"/>
-          <Logo className="Logo" src={Python} alt="Python Logo"/>
-          <Logo className="Logo" src={Django} alt="Django Logo"/>
-          <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
+          <div className="holder">
+            <Logo className="Logo" src={HTML} alt="HTML Logo"/>
+            <Logo className="Logo" src={CSS} alt="CSS Logo"/>
+            <Logo className="Logo" src={JS} alt="JS Logo"/>
+            <Logo className="Logo" src={JQuery} alt="JQuery Logo"/>
+            <Logo className="Logo" src={Python} alt="Python Logo"/>
+            <Logo className="Logo" src={Django} alt="Django Logo"/>
+            <Logo className="Logo" src={Post} alt="PostgreSQL Logo"/>
+          </div>
           <Hide>
             <a href="https://memory-reflections.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Reflections} alt="Reflections website"/></a> 
           </Hide>
@@ -92,11 +96,13 @@ const MyWork = () => {
           <motion.h2 variants={fadeAnimation}>Music Player</motion.h2>
           <motion.div variants={dividerAnimation} className="divider"></motion.div>
           <p>This was the first React single page application that I created. This is also the first time I used SASS.</p>
+        <div className="holder">
           <Logo className="Logo" src={HTML} alt="HTML Logo"/>
           <Logo className="Logo" src={CSS} alt="CSS Logo"/>
           <Logo className="Logo" src={SASS} alt="SASS Logo"/>
           <Logo className="Logo" src={JS} alt="JS Logo"/>
           <Logo className="Logo" src={ReactImg} alt="React Logo"/>
+        </div>
           <Hide>
             <a href="https://festive-almeida-ab2690.netlify.app/"><Screenshot variants={screenshotAnimation} src={Music} alt="Folio website"/></a> 
           </Hide>
@@ -106,6 +112,7 @@ const MyWork = () => {
           <motion.h2 variants={fadeAnimation}>Folio</motion.h2>
           <motion.div variants={dividerAnimation} className="divider"></motion.div>
           <p>Full MERN stack application built with a team of myself and 3 others. This application is for freelanceers to utilize as a tool to keep their work, clients and themselves organized.</p>
+        <div className="holder">
           <Logo className="Logo" src={HTML} alt="HTML Logo"/>
           <Logo className="Logo" src={CSS} alt="CSS Logo"/>
           <Logo className="Logo" src={SASS} alt="SASS Logo"/>
@@ -114,6 +121,7 @@ const MyWork = () => {
           <Logo className="Logo" src={Express} alt="Express Logo" style={{background: "white", width: "10vw"}}/>
           <Logo className="Logo" src={ReactImg} alt="React Logo"/>
           <Logo className="Logo" src={Node} alt="Node.js Logo"/>
+        </div>
           <Hide>
             <a href="https://folio-front24.herokuapp.com/"><Screenshot variants={screenshotAnimation} src={Folio} alt="Folio website"/></a> 
           </Hide>
@@ -134,9 +142,10 @@ const Work = styled(motion.div)`
   }
   p {
     padding-top: 1rem;
+    color: black;
   }
   .divider {
-    background: #cccccc;
+    background: #000000;
     height: 0.2rem; 
     margin: 2rem 0;
     width: 100%;
@@ -150,22 +159,36 @@ const Work = styled(motion.div)`
 `
 
 const Project = styled(motion.div)`
-  padding-bottom: 1rem;
-  .line {
-    height: 0.5rem;
-    background: #23d997;
-    margin-bottom: 3rem;
-  }
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 1rem;
+.line {
+  height: 0.5rem;
+  background: #23d997;
+}
+.holder {
+  display: flex;
+}
 `
 
 const Screenshot = styled(motion.img) `
   width: 100%;
-  height: 100vh;
-  margin-left: auto;
-  object-fit: cover;
+  object-fit: scale-down;
   overflow-y: scroll;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  @media (max-width: 1900px) {
+    width: 100vh;
+    height: 80vh;
+  }
+  @media (max-width: 1250px) {
+    width: 76%;
+    margin: -17vh 12% -17vh 12%;
+  }
+  @media (max-width: 900px) {
+    width: 64%;
+    height: 75vh;
+    margin: -20vh 18% -20vh 18%;
+  }
 `
 
 const Hide = styled.div `
