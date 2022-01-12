@@ -17,26 +17,34 @@ const FaqSection = () => {
       <h2>More About <span>Me</span></h2>
       <br/><br/><br/>
       <AnimateSharedLayout>
-        <Toggle title ="My Education">
+        <Toggle title ="Other Hobbies">
             <div className="answer">
-              <p>Bootcamp Graduate</p>
-              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+              <p>I am an artist and I mainly draw portraits and graffiti. I've also done some graphic design work.</p>
+              <p>I'm a big gamer primarily playing FPS games so I can satisfy my competitve side.</p>
             </div>  
         </Toggle>
       </AnimateSharedLayout>
       <AnimateSharedLayout>
-        <Toggle title="Current Projects">      
+        <Toggle title ="My Education">
             <div className="answer">
-              <p>Bootcamp Graduate</p>
-              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+              <p>General Assembly - Software Engineering Immersive (Remote) Graduate </p>
+              <p>Colorado Technical University - Bachelors Computer Science - Software Engineering exp. Graduation 04/2023 </p>
+            </div>  
+        </Toggle>
+      </AnimateSharedLayout>
+      <AnimateSharedLayout>
+        <Toggle title="Current Projects & Pursuits">      
+            <div className="answer">
+              <p>Currently I am expanding my scope by learning new technologies and libraries including Matierail UI and Tailwind as well as Redux.</p>
+              <p>Revisiting my older projects to better implement responsive design and include things such as page transitions and animations as I learn them.</p>
             </div>
         </Toggle>
       </AnimateSharedLayout>
       <AnimateSharedLayout>
-        <Toggle title="Collaborate With Me">     
+        <Toggle title="Work With Me">     
             <div className="answer">
-              <p>Bootcamp Graduate</p>
-              <p>Currently pursuing B.S in CS -Softwarre Engineering</p>
+              <p>If you have any ideas for a project that you'd like to collaborate on, contact me. I enjoy working and learning along side others.</p>
+              <p>I am open to freelance work as well.</p>
             </div>
         </Toggle>
       </AnimateSharedLayout>
