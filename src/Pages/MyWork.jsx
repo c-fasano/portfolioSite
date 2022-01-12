@@ -178,16 +178,19 @@ const Screenshot = styled(motion.img) `
   overflow-y: scroll;
   @media (max-width: 1900px) {
     width: 100vh;
-    height: 80vh;
   }
   @media (max-width: 1250px) {
-    width: 76%;
-    margin: -17vh 12% -17vh 12%;
+    width: 86%;
+    margin: -17vh 7% -17vh 7%;
   }
   @media (max-width: 900px) {
-    width: 64%;
+    width: 76%;
     height: 75vh;
-    margin: -20vh 18% -20vh 18%;
+    margin: -20vh 12% -20vh 12%;
+  }
+  @media (max-width: 450px) {
+    width: 64%;
+    margin: -26vh 17% -26vh 17%;
   }
 `
 
