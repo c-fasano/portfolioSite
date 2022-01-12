@@ -45,6 +45,7 @@ const FaqSection = () => {
 }
 
 const StyledFaq = styled(StyledAbout)`
+  padding: 5vh 5% 5vh 5%;
   display: block;
   h2 {
     padding-bottom: 2rem;
@@ -65,6 +66,12 @@ const StyledFaq = styled(StyledAbout)`
     p {
       padding: 1rem 0;
     }
+  }
+  @media (max-width: 1100px) {
+    padding: 0 5% 5vh 5%;
+  }
+  h2 {
+    padding: 0;
   }
 `
 

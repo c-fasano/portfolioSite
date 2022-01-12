@@ -17,7 +17,7 @@ body {
 
 button {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5vw;
   cursor: pointer;
   padding: 1rem 2rem;
   border: 3px solid blue;
@@ -34,7 +34,7 @@ button {
 
 h2 {
   font-weight: lighter;
-  font-size: 4rem;
+  font-size: 3.5vw;
 }
 
 h3 {
@@ -44,11 +44,11 @@ h3 {
 h4 {
   font-weight: bold;
   color: white;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 a {
-  font-size: 1.1rem;
+  font-size: 2.5vw;
 }
 
 span {
@@ -59,10 +59,26 @@ span {
 p {
   padding: 3rem 0;
   color: #ccc;
-  font-size: 1.4rem;
+  font-size: 1.5vw;
   line-height: 150%;
 }
 
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 5vw;
+  }
+  p{
+    font-size: 3vw;
+    padding: 1.5rem 0;
+  }
+  button {
+    font-size: 3vw;
+    padding: 2vh 2%;
+  }
+  h4 {
+    font-size: 4vw;
+  }
+}
 `
 
 export default GlobalStyle

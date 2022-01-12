@@ -100,23 +100,27 @@ const SkillsSection = () => {
 
 
 const StyledServices = styled(StyledAbout)`
+  padding: 5vh 0 5vh 5%;
   h2 {
     padding-bottom: 5rem;
   }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
+  @media (max-width: 1100px) {
+  display: block;
+  text-align: center;
+}
 `
 
 const StyledCards = styled.div `
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1100px) {
+    justify-content: center;
+  }
 `
 
 const StyledCard = styled.div `
   flex-basis: 4rem;
-  padding: 3rem 2rem 1rem 0;
+  padding: 3vh 2% 1vh 0;
   .icon {
       display: flex;
       align-items: center;
@@ -124,6 +128,12 @@ const StyledCard = styled.div `
       padding-bottom: 1rem;
       background: white;
       color: black;
+    }
+  }
+  @media (max-width: 1100px) {
+    padding: 0 5% 5% 5%;
+    h2 {
+      padding-bottom: 0rem;
     }
   }
 `

@@ -24,7 +24,7 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1vh 5%;
   background: #282828;
   a {
     color: white;
@@ -41,6 +41,12 @@ const StyledNav = styled.nav`
   li{
     padding-left: 10rem;
     position: relative;
+  }
+  @media (max-width: 1100px) {
+    ul {
+      padding: 2vh 2%;
+      justify-content: space-evenly;
+    }
   }
 `
 

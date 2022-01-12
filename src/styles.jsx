@@ -6,15 +6,26 @@ min-height: 90vh;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 5rem 10rem;
+padding: 5vh 0 5vh 5%;
 color: white;
+@media (max-width: 1100px) {
+  display: block;
+  padding: 2vh 2%;
+  text-align: center;
+}
 `
 export const StyledDescription = styled(motion.div) `
 z-index: 2;
 flex: 1;
-padding-right: 5rem;
+padding-right: 5%;
 h2 {
   font-weight: lighter;
+}
+@media (max-width: 1100px) {
+  padding: 0;
+  button {
+    margin-bottom: 3vh;
+  }
 }
 `
 export const StyledImage = styled.div `
