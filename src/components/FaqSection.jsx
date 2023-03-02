@@ -44,7 +44,7 @@ const FaqSection = () => {
         <Toggle title="Work With Me">     
             <div className="answer">
               <p>If you have any ideas for a project that you'd like to collaborate on, contact me. I enjoy working and learning along side others.</p>
-              <p>I am open to freelance work as well.</p>
+              <p>I am open to freelance work as well!</p>
             </div>
         </Toggle>
       </AnimateSharedLayout>
